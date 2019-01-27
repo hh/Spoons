@@ -7,10 +7,30 @@
     "Field": [],
     "Function": [],
     "Method": [],
-    "Variable": [],
+    "Variable": [
+      {
+        "def": "BingDaily.changeAllSpaces",
+        "desc": "If `true` Spoon will set background image to all desktops (spaces)",
+        "doc": "If `true` Spoon will set background image to all desktops (spaces)\n\nMacOS doesn't have nice API for it, so we're using hack - set watcher to space change and set Bing image to active space. Default: false",
+        "name": "changeAllSpaces",
+        "signature": "BingDaily.changeAllSpaces",
+        "stripped_doc": "MacOS doesn't have nice API for it, so we're using hack - set watcher to space change and set Bing image to active space. Default: false",
+        "type": "Variable"
+      }
+    ],
     "desc": "Use Bing daily picture as your wallpaper, automatically.",
     "doc": "Use Bing daily picture as your wallpaper, automatically.\n\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/BingDaily.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/BingDaily.spoon.zip)",
-    "items": [],
+    "items": [
+      {
+        "def": "BingDaily.changeAllSpaces",
+        "desc": "If `true` Spoon will set background image to all desktops (spaces)",
+        "doc": "If `true` Spoon will set background image to all desktops (spaces)\n\nMacOS doesn't have nice API for it, so we're using hack - set watcher to space change and set Bing image to active space. Default: false",
+        "name": "changeAllSpaces",
+        "signature": "BingDaily.changeAllSpaces",
+        "stripped_doc": "MacOS doesn't have nice API for it, so we're using hack - set watcher to space change and set Bing image to active space. Default: false",
+        "type": "Variable"
+      }
+    ],
     "name": "BingDaily",
     "stripped_doc": "\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/BingDaily.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/BingDaily.spoon.zip)",
     "submodules": [],
