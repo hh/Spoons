@@ -1,3 +1,8 @@
+# Differences from main repo
+
+- BingDaily:
+    - added option to change background at all spaces
+
 # Spoons
 
 This is the source of the official repository of Hammerspoon Spoons. To view the repository and download Spoons, visit [http://www.hammerspoon.org/Spoons](http://www.hammerspoon.org/Spoons).
