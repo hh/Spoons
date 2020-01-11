@@ -60,6 +60,43 @@
     "Deprecated": [],
     "Field": [],
     "Function": [],
+    "Method": [],
+    "Variable": [
+      {
+        "def": "MacroS.logger",
+        "desc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "doc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "name": "logger",
+        "signature": "MacroS.logger",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "desc": "A new Sample Spoon",
+    "doc": "A new Sample Spoon\n\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/MacroS.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/MacroS.spoon.zip)",
+    "items": [
+      {
+        "def": "MacroS.logger",
+        "desc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "doc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "name": "logger",
+        "signature": "MacroS.logger",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "name": "MacroS",
+    "stripped_doc": "\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/MacroS.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/MacroS.spoon.zip)",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
     "Method": [
       {
         "def": "MouseCircle:init()",

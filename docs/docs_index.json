@@ -16,6 +16,17 @@
     "type": "Module"
   },
   {
+    "desc": "A new Sample Spoon",
+    "name": "MacroS",
+    "type": "Module"
+  },
+  {
+    "desc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+    "module": "MacroS",
+    "name": "logger",
+    "type": "Variable"
+  },
+  {
     "desc": "Draws a circle around the mouse pointer when a hotkey is pressed",
     "name": "MouseCircle",
     "type": "Module"

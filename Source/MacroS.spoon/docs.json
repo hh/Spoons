@@ -1,0 +1,79 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+      {
+        "doc" : "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "stripped_doc" : [
+          "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon."
+        ],
+        "parameters" : [
+
+        ],
+        "def" : "MacroS.logger",
+        "notes" : [
+
+        ],
+        "signature" : "MacroS.logger",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "name" : "logger"
+      }
+    ],
+    "stripped_doc" : [
+
+    ],
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "desc" : "A new Sample Spoon",
+    "Constructor" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "Method" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "stripped_doc" : [
+          "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon."
+        ],
+        "parameters" : [
+
+        ],
+        "def" : "MacroS.logger",
+        "notes" : [
+
+        ],
+        "signature" : "MacroS.logger",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "name" : "logger"
+      }
+    ],
+    "Command" : [
+
+    ],
+    "doc" : "A new Sample Spoon\n\nDownload: [https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/MacroS.spoon.zip](https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/MacroS.spoon.zip)",
+    "name" : "MacroS"
+  }
+]
