@@ -90,5 +90,84 @@
     "stripped_doc": "\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/MouseCircle.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/MouseCircle.spoon.zip)",
     "submodules": [],
     "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "PushToTalk:init()",
+        "desc": "Start menu and all watcher ",
+        "doc": "Start menu and all watcher ",
+        "name": "init",
+        "signature": "PushToTalk:init()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "PushToTalk:stop()",
+        "desc": "Stop fully PushToTalk",
+        "doc": "Stop fully PushToTalk",
+        "name": "stop",
+        "signature": "PushToTalk:stop()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "PushToTalk:toggleStates()",
+        "desc": "Toggle states from the argument in order",
+        "doc": "Toggle states from the argument in order\n\nParameters:\n * states - A array of states to toggle. For example: `{'push-to-talk', 'release-to-talk'}`",
+        "name": "toggleStates",
+        "parameters": [
+          " * states - A array of states to toggle. For example: `{'push-to-talk', 'release-to-talk'}`"
+        ],
+        "signature": "PushToTalk:toggleStates()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "PushToTalk tool for remote conference chats",
+    "doc": "PushToTalk tool for remote conference chats\n\nI'm working remotetly for last 5 years and this is the tool that makes\nconferences nice for everyone. When my conference application starts\nPushToTalk activate `push-to-talk` mode. In this mode I'm muted\nand I need to press `fn` key to temporaty unmute myself.\nAlso I have keybindings to easyly switch from `push-to-talk` to `release-to-talk` mode, in case I'm active speaker.\n\nPushToTalk has menubar with icons so when you see red circle - you shod know you're unmuted.\n\nThis is my config: `spoon.SpoonInstall:andUse(\"PushToTalk\", {start = true, config = { app_switcher = { ['zoom.us'] = 'push-to-talk' }}})` \nand binding for this `function() spoon.PushToTalk.toggleStates({'push-to-talk', 'release-to-talk'}) end`",
+    "items": [
+      {
+        "def": "PushToTalk:init()",
+        "desc": "Start menu and all watcher ",
+        "doc": "Start menu and all watcher ",
+        "name": "init",
+        "signature": "PushToTalk:init()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "PushToTalk:stop()",
+        "desc": "Stop fully PushToTalk",
+        "doc": "Stop fully PushToTalk",
+        "name": "stop",
+        "signature": "PushToTalk:stop()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "PushToTalk:toggleStates()",
+        "desc": "Toggle states from the argument in order",
+        "doc": "Toggle states from the argument in order\n\nParameters:\n * states - A array of states to toggle. For example: `{'push-to-talk', 'release-to-talk'}`",
+        "name": "toggleStates",
+        "parameters": [
+          " * states - A array of states to toggle. For example: `{'push-to-talk', 'release-to-talk'}`"
+        ],
+        "signature": "PushToTalk:toggleStates()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "PushToTalk",
+    "stripped_doc": "\nI'm working remotetly for last 5 years and this is the tool that makes\nconferences nice for everyone. When my conference application starts\nPushToTalk activate `push-to-talk` mode. In this mode I'm muted\nand I need to press `fn` key to temporaty unmute myself.\nAlso I have keybindings to easyly switch from `push-to-talk` to `release-to-talk` mode, in case I'm active speaker.\n\nPushToTalk has menubar with icons so when you see red circle - you shod know you're unmuted.\n\nThis is my config: `spoon.SpoonInstall:andUse(\"PushToTalk\", {start = true, config = { app_switcher = { ['zoom.us'] = 'push-to-talk' }}})` \nand binding for this `function() spoon.PushToTalk.toggleStates({'push-to-talk', 'release-to-talk'}) end`",
+    "submodules": [],
+    "type": "Module"
   }
 ]

@@ -26,5 +26,28 @@
     "module": "MouseCircle",
     "name": "toggle",
     "type": "Method"
+  },
+  {
+    "desc": "PushToTalk tool for remote conference chats",
+    "name": "PushToTalk",
+    "type": "Module"
+  },
+  {
+    "desc": "Start menu and all watcher ",
+    "module": "PushToTalk",
+    "name": "init",
+    "type": "Method"
+  },
+  {
+    "desc": "Stop fully PushToTalk",
+    "module": "PushToTalk",
+    "name": "stop",
+    "type": "Method"
+  },
+  {
+    "desc": "Toggle states from the argument in order",
+    "module": "PushToTalk",
+    "name": "toggleStates",
+    "type": "Method"
   }
 ]
