@@ -57,11 +57,10 @@ local function superGenPass(pass)
     return pass
 end
 
-local function textPrompt(message, informativeText, defaultText, buttonOne, buttonTwo)
-    -- TODO: can we use password field
+local function textPrompt(message, informativeText, defaultText, buttonOne, buttonTwo, secureField)
     local front_app = hs.application.frontmostApplication()
     hs.focus()
-    button, text = hs.dialog.textPrompt(message, informativeText, defaultText, buttonOne, buttonTwo)
+    button, text = hs.dialog.textPrompt(message, informativeText, defaultText, buttonOne, buttonTwo, secureField)
     front_app:activate()
     return button, text
 end
@@ -94,7 +93,7 @@ local function getMasterPassword()
         local master_password = nil
         result, master_password = textPrompt(
             "Type your master password:",
-            "", "", "ok", "cancel")
+            "", "", "ok", "cancel", true)
         if result ~= "ok" then
             return
         end
@@ -132,7 +131,7 @@ function obj.paste_password(options)
         url = extractUrlFromBrowsers()
     end
     if not url then
-        result, url = textPrompt("Type url for password:", "", "", "ok", "cancel")
+        result, url = textPrompt("Type url for password:", "", "", "ok", "cancel", false)
         if result ~= "ok" then
             return
         end
