@@ -54,11 +54,11 @@
         "type": "Method"
       },
       {
-        "def": "MouseCircle:toogle()",
-        "desc": "Toogles visibility of circle around mouse position",
-        "doc": "Toogles visibility of circle around mouse position",
-        "name": "toogle",
-        "signature": "MouseCircle:toogle()",
+        "def": "MouseCircle:toggle()",
+        "desc": "Toggle visibility of circle around mouse position",
+        "doc": "Toggle visibility of circle around mouse position",
+        "name": "toggle",
+        "signature": "MouseCircle:toggle()",
         "stripped_doc": "",
         "type": "Method"
       }
@@ -77,11 +77,11 @@
         "type": "Method"
       },
       {
-        "def": "MouseCircle:toogle()",
-        "desc": "Toogles visibility of circle around mouse position",
-        "doc": "Toogles visibility of circle around mouse position",
-        "name": "toogle",
-        "signature": "MouseCircle:toogle()",
+        "def": "MouseCircle:toggle()",
+        "desc": "Toggle visibility of circle around mouse position",
+        "doc": "Toggle visibility of circle around mouse position",
+        "name": "toggle",
+        "signature": "MouseCircle:toggle()",
         "stripped_doc": "",
         "type": "Method"
       }

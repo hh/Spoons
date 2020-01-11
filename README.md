@@ -1,10 +1,5 @@
-# Differences from main repo
-
-- BingDaily:
-    - added option to change background at all spaces
-
 # Spoons
+This is Spoon repo with my own or modified to my needs Spoons.
 
-This is the source of the official repository of Hammerspoon Spoons. To view the repository and download Spoons, visit [http://www.hammerspoon.org/Spoons](http://www.hammerspoon.org/Spoons).
-
-For more information, see [https://github.com/Hammerspoon/hammerspoon/blob/master/SPOONS.md](https://github.com/Hammerspoon/hammerspoon/blob/master/SPOONS.md)
+- MouseCircle: Modified. Toggle on/off red circle around mouse instead of showing for a few seconds. I'm using it during presentations and sometime at pair programming.
+- BingDaily: Modified. Set daily background at all spaces in MacOs to picture from Bing.

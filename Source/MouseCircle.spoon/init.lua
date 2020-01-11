@@ -52,10 +52,10 @@ end
 function obj:init()
 end
 
---- MouseCircle:toogle()
+--- MouseCircle:toggle()
 --- Method
---- Toogles visibility of circle around mouse position
-function obj:toogle()
+--- Toggle visibility of circle around mouse position
+function obj:toggle()
     if self.show_circle then
         self.show_circle = false
     else

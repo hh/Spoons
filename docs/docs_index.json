@@ -22,9 +22,9 @@
     "type": "Method"
   },
   {
-    "desc": "Toogles visibility of circle around mouse position",
+    "desc": "Toggle visibility of circle around mouse position",
     "module": "MouseCircle",
-    "name": "toogle",
+    "name": "toggle",
     "type": "Method"
   }
 ]
