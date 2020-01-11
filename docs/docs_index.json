@@ -9,5 +9,22 @@
     "module": "BingDaily",
     "name": "changeAllSpaces",
     "type": "Variable"
+  },
+  {
+    "desc": "Draws a circle around the mouse pointer when a hotkey is pressed",
+    "name": "MouseCircle",
+    "type": "Module"
+  },
+  {
+    "desc": "Initial setup. It's empty currently",
+    "module": "MouseCircle",
+    "name": "init",
+    "type": "Method"
+  },
+  {
+    "desc": "Toogles visibility of circle around mouse position",
+    "module": "MouseCircle",
+    "name": "toogle",
+    "type": "Method"
   }
 ]

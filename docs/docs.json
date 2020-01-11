@@ -35,5 +35,60 @@
     "stripped_doc": "\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/BingDaily.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/BingDaily.spoon.zip)",
     "submodules": [],
     "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "MouseCircle:init()",
+        "desc": "Initial setup. It's empty currently",
+        "doc": "Initial setup. It's empty currently",
+        "name": "init",
+        "signature": "MouseCircle:init()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MouseCircle:toogle()",
+        "desc": "Toogles visibility of circle around mouse position",
+        "doc": "Toogles visibility of circle around mouse position",
+        "name": "toogle",
+        "signature": "MouseCircle:toogle()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Draws a circle around the mouse pointer when a hotkey is pressed",
+    "doc": "Draws a circle around the mouse pointer when a hotkey is pressed\n\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/MouseCircle.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/MouseCircle.spoon.zip)",
+    "items": [
+      {
+        "def": "MouseCircle:init()",
+        "desc": "Initial setup. It's empty currently",
+        "doc": "Initial setup. It's empty currently",
+        "name": "init",
+        "signature": "MouseCircle:init()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MouseCircle:toogle()",
+        "desc": "Toogles visibility of circle around mouse position",
+        "doc": "Toogles visibility of circle around mouse position",
+        "name": "toogle",
+        "signature": "MouseCircle:toogle()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "MouseCircle",
+    "stripped_doc": "\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/MouseCircle.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/MouseCircle.spoon.zip)",
+    "submodules": [],
+    "type": "Module"
   }
 ]
