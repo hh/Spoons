@@ -43,6 +43,23 @@
     "Deprecated": [],
     "Field": [],
     "Function": [],
+    "Method": [],
+    "Variable": [],
+    "desc": "https://github.com/chriszarate/supergenpass-lib",
+    "doc": "https://github.com/chriszarate/supergenpass-lib\nhttps://gist.github.com/prashanthrajagopal/08ab39d62725c8a8716b",
+    "items": [],
+    "name": "EasySuperGenPass",
+    "stripped_doc": "https://gist.github.com/prashanthrajagopal/08ab39d62725c8a8716b",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
     "Method": [
       {
         "def": "MouseCircle:init()",

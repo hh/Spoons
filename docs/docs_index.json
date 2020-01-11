@@ -11,6 +11,11 @@
     "type": "Variable"
   },
   {
+    "desc": "https://github.com/chriszarate/supergenpass-lib",
+    "name": "EasySuperGenPass",
+    "type": "Module"
+  },
+  {
     "desc": "Draws a circle around the mouse pointer when a hotkey is pressed",
     "name": "MouseCircle",
     "type": "Module"

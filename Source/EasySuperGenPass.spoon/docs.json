@@ -1,0 +1,41 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+
+    ],
+    "stripped_doc" : [
+
+    ],
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "desc" : "https:\/\/github.com\/chriszarate\/supergenpass-lib",
+    "Constructor" : [
+
+    ],
+    "items" : [
+
+    ],
+    "Method" : [
+
+    ],
+    "Command" : [
+
+    ],
+    "doc" : "https:\/\/github.com\/chriszarate\/supergenpass-lib\nhttps:\/\/gist.github.com\/prashanthrajagopal\/08ab39d62725c8a8716b",
+    "Field" : [
+
+    ],
+    "name" : "EasySuperGenPass"
+  }
+]
