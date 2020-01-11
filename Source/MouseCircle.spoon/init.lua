@@ -10,7 +10,7 @@ obj.__index = obj
 -- Metadata
 obj.name = "MouseCircle"
 obj.version = "1.0"
-obj.author = "Chris Jones <cmsj@tenshu.net>"
+obj.author = "Roman Khomenko and Chris Jones <cmsj@tenshu.net>"
 obj.homepage = "https://github.com/Hammerspoon/Spoons"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
 
