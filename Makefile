@@ -13,4 +13,7 @@ $(ZIPDIR)/%.zip: $(SRCDIR)/%
 	rm -f $@
 	cd $(SRCDIR) ; $(ZIP) -9 -r ../$@ $(patsubst $(SRCDIR)/%, %, $<)
 
+doc:
+	./build_docs.sh
+
 .PHONY: clean

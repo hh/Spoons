@@ -1,17 +1,21 @@
 --- === PushToTalk ===
 ---
---- PushToTalk tool for remote conference chats
+--- Implements push-to-talk and push-to-mute functionality with `fn` key.
+--- I implemented this after reading Gitlab remote handbook https://about.gitlab.com/handbook/communication/ about Shush utility.
 ---
---- I'm working remotetly for last 5 years and this is the tool that makes
---- conferences nice for everyone. When my conference application starts
---- PushToTalk activate `push-to-talk` mode. In this mode I'm muted
---- and I need to press `fn` key to temporaty unmute myself.
---- Also I have keybindings to easyly switch from `push-to-talk` to `release-to-talk` mode, in case I'm active speaker.
+--- My workflow:
 ---
---- PushToTalk has menubar with icons so when you see red circle - you shod know you're unmuted.
+--- When Zoom starts, PushToTalk automatically changes mic state from `default`
+--- to `push-to-talk`, so I need to press `fn` key to unmute myself and speak.
+--- If I need to actively chat in group meeting or it's one-on-one meeting,
+--- I'm switching to `push-to-mute` state, so mic will be unmute by default and `fn` key mutes it.
 ---
---- This is my config: `spoon.SpoonInstall:andUse("PushToTalk", {start = true, config = { app_switcher = { ['zoom.us'] = 'push-to-talk' }}})` 
---- and binding for this `function() spoon.PushToTalk.toggleStates({'push-to-talk', 'release-to-talk'}) end`
+--- PushToTalk has menubar with colorful icons so you can easily see current mic state.
+---
+--- Sample config: `spoon.SpoonInstall:andUse("PushToTalk", {start = true, config = { app_switcher = { ['zoom.us'] = 'push-to-talk' }}})`
+--- and separate keybinding to toggle states with lambda function `function() spoon.PushToTalk.toggleStates({'push-to-talk', 'release-to-talk'}) end`
+---
+--- Check out my config: https://github.com/skrypka/hammerspoon_config/blob/master/init.lua
 
 local obj = {}
 obj.__index = obj
@@ -27,6 +31,10 @@ obj.defaultState = 'unmute'
 
 obj.state = obj.defaultState
 obj.pushed = false
+--- PushToTalk.app_switcher
+--- Variable
+--- Takes mapping from application name to mic state.
+--- For example this `{ ['zoom.us'] = 'push-to-talk' }` will switch mic to `push-to-talk` state when Zoom app starts.
 obj.app_switcher = {}
 
 local function showState()
@@ -76,7 +84,7 @@ local function appWatcher(appName, eventType, appObject)
         elseif (eventType == hs.application.watcher.terminated) then
             obj.setState(obj.defaultState)
         end
-    end 
+    end
 end
 
 local function eventTapWatcher(event)
@@ -97,7 +105,7 @@ end
 
 --- PushToTalk:init()
 --- Method
---- Start menu and all watcher 
+--- Starts menu and key watcher
 function obj:start()
     self:stop()
     obj.appWatcher = hs.application.watcher.new(appWatcher)
@@ -113,7 +121,7 @@ end
 
 --- PushToTalk:stop()
 --- Method
---- Stop fully PushToTalk
+--- Stops PushToTalk
 function obj:stop()
     if obj.appWatcher then obj.appWatcher:stop() end
     if obj.eventTapWatcher then obj.eventTapWatcher:stop() end
@@ -122,7 +130,7 @@ end
 
 --- PushToTalk:toggleStates()
 --- Method
---- Toggle states from the argument in order
+--- Cycle states in order
 ---
 --- Parameters:
 ---  * states - A array of states to toggle. For example: `{'push-to-talk', 'release-to-talk'}`

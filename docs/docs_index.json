@@ -44,24 +44,30 @@
     "type": "Method"
   },
   {
-    "desc": "PushToTalk tool for remote conference chats",
+    "desc": "Implements push-to-talk and push-to-mute functionality with `fn` key.",
     "name": "PushToTalk",
     "type": "Module"
   },
   {
-    "desc": "Start menu and all watcher ",
+    "desc": "Takes mapping from application name to mic state.",
+    "module": "PushToTalk",
+    "name": "app_switcher",
+    "type": "Variable"
+  },
+  {
+    "desc": "Starts menu and key watcher",
     "module": "PushToTalk",
     "name": "init",
     "type": "Method"
   },
   {
-    "desc": "Stop fully PushToTalk",
+    "desc": "Stops PushToTalk",
     "module": "PushToTalk",
     "name": "stop",
     "type": "Method"
   },
   {
-    "desc": "Toggle states from the argument in order",
+    "desc": "Cycle states in order",
     "module": "PushToTalk",
     "name": "toggleStates",
     "type": "Method"

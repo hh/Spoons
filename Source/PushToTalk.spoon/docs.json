@@ -10,7 +10,27 @@
 
     ],
     "Variable" : [
+      {
+        "doc" : "Takes mapping from application name to mic state.\nFor example this `{ ['zoom.us'] = 'push-to-talk' }` will switch mic to `push-to-talk` state when Zoom app starts.",
+        "name" : "app_switcher",
+        "stripped_doc" : [
+          "Takes mapping from application name to mic state.",
+          "For example this `{ ['zoom.us'] = 'push-to-talk' }` will switch mic to `push-to-talk` state when Zoom app starts."
+        ],
+        "parameters" : [
 
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PushToTalk.app_switcher",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Takes mapping from application name to mic state.",
+        "def" : "PushToTalk.app_switcher"
+      }
     ],
     "stripped_doc" : [
 
@@ -19,18 +39,20 @@
 
     ],
     "type" : "Module",
-    "desc" : "PushToTalk tool for remote conference chats",
+    "desc" : "Implements push-to-talk and push-to-mute functionality with `fn` key.",
     "Constructor" : [
 
     ],
-    "doc" : "PushToTalk tool for remote conference chats\n\nI'm working remotetly for last 5 years and this is the tool that makes\nconferences nice for everyone. When my conference application starts\nPushToTalk activate `push-to-talk` mode. In this mode I'm muted\nand I need to pres `fn` key to temporaty unmute myself.\nAlso I have keybindings to easyly switch from `push-to-talk` to `release-to-talk` mode, in case I'm active speaker.\n\nPushToTalk has menubar with icons so when you see red circle - you shod know you're unmuted.\n\nThis is my config: `spoon.SpoonInstall:andUse(\"PushToTalk\", {start = true, config = { app_switcher = { ['zoom.us'] = 'push-to-talk' }}})` \nand binding for this `function() spoon.PushToTalk.toggleStates({'push-to-talk', 'release-to-talk'}) end`",
+    "doc" : "Implements push-to-talk and push-to-mute functionality with `fn` key.\nI implemented this after reading Gitlab remote handbook https:\/\/about.gitlab.com\/handbook\/communication\/ about Shush utility.\n\nMy workflow:\n\nWhen Zoom starts, PushToTalk automatically changes mic state from `default`\nto `push-to-talk`, so I need to press `fn` key to unmute myself and speak.\nIf I need to actively chat in group meeting or it's one-on-one meeting,\nI'm switching to `push-to-mute` state, so mic will be unmute by default and `fn` key mutes it.\n\nPushToTalk has menubar with colorful icons so you can easily see current mic state.\n\nSample config: `spoon.SpoonInstall:andUse(\"PushToTalk\", {start = true, config = { app_switcher = { ['zoom.us'] = 'push-to-talk' }}})` \nand separate keybinding to toggle states with lambda function `function() spoon.PushToTalk.toggleStates({'push-to-talk', 'release-to-talk'}) end`\n\nCheck out my config: https:\/\/github.com\/skrypka\/hammerspoon_config\/blob\/master\/init.lua",
     "Method" : [
       {
         "doc" : "Initial setup. It's empty currently",
         "name" : "init",
-        "def" : "PushToTalk:init()",
         "stripped_doc" : [
           "Initial setup. It's empty currently"
+        ],
+        "parameters" : [
+
         ],
         "notes" : [
 
@@ -41,16 +63,16 @@
 
         ],
         "desc" : "Initial setup. It's empty currently",
-        "parameters" : [
-
-        ]
+        "def" : "PushToTalk:init()"
       },
       {
-        "doc" : "Start menu and all watcher",
+        "doc" : "Starts menu and key watcher",
         "name" : "init",
-        "def" : "PushToTalk:init()",
         "stripped_doc" : [
-          "Start menu and all watcher"
+          "Starts menu and key watcher"
+        ],
+        "parameters" : [
+
         ],
         "notes" : [
 
@@ -60,17 +82,17 @@
         "returns" : [
 
         ],
-        "desc" : "Start menu and all watcher",
-        "parameters" : [
-
-        ]
+        "desc" : "Starts menu and key watcher",
+        "def" : "PushToTalk:init()"
       },
       {
-        "doc" : "Stop fully PushToTalk",
+        "doc" : "Stops PushToTalk",
         "name" : "stop",
-        "def" : "PushToTalk:stop()",
         "stripped_doc" : [
-          "Stop fully PushToTalk"
+          "Stops PushToTalk"
+        ],
+        "parameters" : [
+
         ],
         "notes" : [
 
@@ -80,18 +102,18 @@
         "returns" : [
 
         ],
-        "desc" : "Stop fully PushToTalk",
-        "parameters" : [
-
-        ]
+        "desc" : "Stops PushToTalk",
+        "def" : "PushToTalk:stop()"
       },
       {
-        "doc" : "Toggle states from the argument in order\n\nParameters:\n * states - A array of states to toggle. For example: `{'push-to-talk', 'release-to-talk'}`",
+        "doc" : "Cycle states in order\n\nParameters:\n * states - A array of states to toggle. For example: `{'push-to-talk', 'release-to-talk'}`",
         "name" : "toggleStates",
-        "def" : "PushToTalk:toggleStates()",
         "stripped_doc" : [
-          "Toggle states from the argument in order",
+          "Cycle states in order",
           ""
+        ],
+        "parameters" : [
+          " * states - A array of states to toggle. For example: `{'push-to-talk', 'release-to-talk'}`"
         ],
         "notes" : [
 
@@ -101,25 +123,46 @@
         "returns" : [
 
         ],
-        "desc" : "Toggle states from the argument in order",
-        "parameters" : [
-          " * states - A array of states to toggle. For example: `{'push-to-talk', 'release-to-talk'}`"
-        ]
+        "desc" : "Cycle states in order",
+        "def" : "PushToTalk:toggleStates()"
       }
-    ],
-    "Field" : [
-
     ],
     "Command" : [
 
     ],
+    "Field" : [
+
+    ],
     "items" : [
+      {
+        "doc" : "Takes mapping from application name to mic state.\nFor example this `{ ['zoom.us'] = 'push-to-talk' }` will switch mic to `push-to-talk` state when Zoom app starts.",
+        "name" : "app_switcher",
+        "stripped_doc" : [
+          "Takes mapping from application name to mic state.",
+          "For example this `{ ['zoom.us'] = 'push-to-talk' }` will switch mic to `push-to-talk` state when Zoom app starts."
+        ],
+        "parameters" : [
+
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PushToTalk.app_switcher",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Takes mapping from application name to mic state.",
+        "def" : "PushToTalk.app_switcher"
+      },
       {
         "doc" : "Initial setup. It's empty currently",
         "name" : "init",
-        "def" : "PushToTalk:init()",
         "stripped_doc" : [
           "Initial setup. It's empty currently"
+        ],
+        "parameters" : [
+
         ],
         "notes" : [
 
@@ -130,16 +173,16 @@
 
         ],
         "desc" : "Initial setup. It's empty currently",
-        "parameters" : [
-
-        ]
+        "def" : "PushToTalk:init()"
       },
       {
-        "doc" : "Start menu and all watcher",
+        "doc" : "Starts menu and key watcher",
         "name" : "init",
-        "def" : "PushToTalk:init()",
         "stripped_doc" : [
-          "Start menu and all watcher"
+          "Starts menu and key watcher"
+        ],
+        "parameters" : [
+
         ],
         "notes" : [
 
@@ -149,17 +192,17 @@
         "returns" : [
 
         ],
-        "desc" : "Start menu and all watcher",
-        "parameters" : [
-
-        ]
+        "desc" : "Starts menu and key watcher",
+        "def" : "PushToTalk:init()"
       },
       {
-        "doc" : "Stop fully PushToTalk",
+        "doc" : "Stops PushToTalk",
         "name" : "stop",
-        "def" : "PushToTalk:stop()",
         "stripped_doc" : [
-          "Stop fully PushToTalk"
+          "Stops PushToTalk"
+        ],
+        "parameters" : [
+
         ],
         "notes" : [
 
@@ -169,18 +212,18 @@
         "returns" : [
 
         ],
-        "desc" : "Stop fully PushToTalk",
-        "parameters" : [
-
-        ]
+        "desc" : "Stops PushToTalk",
+        "def" : "PushToTalk:stop()"
       },
       {
-        "doc" : "Toggle states from the argument in order\n\nParameters:\n * states - A array of states to toggle. For example: `{'push-to-talk', 'release-to-talk'}`",
+        "doc" : "Cycle states in order\n\nParameters:\n * states - A array of states to toggle. For example: `{'push-to-talk', 'release-to-talk'}`",
         "name" : "toggleStates",
-        "def" : "PushToTalk:toggleStates()",
         "stripped_doc" : [
-          "Toggle states from the argument in order",
+          "Cycle states in order",
           ""
+        ],
+        "parameters" : [
+          " * states - A array of states to toggle. For example: `{'push-to-talk', 'release-to-talk'}`"
         ],
         "notes" : [
 
@@ -190,10 +233,8 @@
         "returns" : [
 
         ],
-        "desc" : "Toggle states from the argument in order",
-        "parameters" : [
-          " * states - A array of states to toggle. For example: `{'push-to-talk', 'release-to-talk'}`"
-        ]
+        "desc" : "Cycle states in order",
+        "def" : "PushToTalk:toggleStates()"
       }
     ],
     "name" : "PushToTalk"
