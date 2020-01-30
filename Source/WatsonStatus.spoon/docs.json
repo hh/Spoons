@@ -1,0 +1,206 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+      {
+        "doc" : "Path to watson binary. Default: `\/usr\/local\/bin\/watson`",
+        "def" : "WatsonStatus.watsonbin",
+        "stripped_doc" : [
+          "Path to watson binary. Default: `\/usr\/local\/bin\/watson`"
+        ],
+        "name" : "watsonbin",
+        "notes" : [
+
+        ],
+        "signature" : "WatsonStatus.watsonbin",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Path to watson binary. Default: `\/usr\/local\/bin\/watson`",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `$HOME\/Library\/Application Support\/watson`",
+        "def" : "WatsonStatus.watsonfolder",
+        "stripped_doc" : [
+          "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `$HOME\/Library\/Application Support\/watson`"
+        ],
+        "name" : "watsonfolder",
+        "notes" : [
+
+        ],
+        "signature" : "WatsonStatus.watsonfolder",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `$HOME\/Library\/Application Support\/watson`",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "stripped_doc" : [
+
+    ],
+    "desc" : "Display in menubar status from time tracker CLI Watson https:\/\/github.com\/TailorDev\/Watson",
+    "type" : "Module",
+    "Deprecated" : [
+
+    ],
+    "Constructor" : [
+
+    ],
+    "doc" : "Display in menubar status from time tracker CLI Watson https:\/\/github.com\/TailorDev\/Watson\nDownload: [https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/WatsonStatus.spoon.zip](https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/WatsonStatus.spoon.zip)",
+    "Field" : [
+
+    ],
+    "Command" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Path to watson binary. Default: `\/usr\/local\/bin\/watson`",
+        "def" : "WatsonStatus.watsonbin",
+        "stripped_doc" : [
+          "Path to watson binary. Default: `\/usr\/local\/bin\/watson`"
+        ],
+        "name" : "watsonbin",
+        "notes" : [
+
+        ],
+        "signature" : "WatsonStatus.watsonbin",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Path to watson binary. Default: `\/usr\/local\/bin\/watson`",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `$HOME\/Library\/Application Support\/watson`",
+        "def" : "WatsonStatus.watsonfolder",
+        "stripped_doc" : [
+          "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `$HOME\/Library\/Application Support\/watson`"
+        ],
+        "name" : "watsonfolder",
+        "notes" : [
+
+        ],
+        "signature" : "WatsonStatus.watsonfolder",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "desc" : "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `$HOME\/Library\/Application Support\/watson`",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Starts WatsonStatus\n\nParameters:\n * None\n\nReturns:\n * The WatsonStatus object",
+        "def" : "WatsonStatus:start()",
+        "stripped_doc" : [
+          "Starts WatsonStatus",
+          ""
+        ],
+        "name" : "start",
+        "notes" : [
+
+        ],
+        "signature" : "WatsonStatus:start()",
+        "type" : "Method",
+        "returns" : [
+          " * The WatsonStatus object"
+        ],
+        "desc" : "Starts WatsonStatus",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Stops WatsonStatus\n\nParameters:\n * None\n\nReturns:\n * The WatsonStatus objectini",
+        "def" : "WatsonStatus:stop()",
+        "stripped_doc" : [
+          "Stops WatsonStatus",
+          ""
+        ],
+        "name" : "stop",
+        "notes" : [
+
+        ],
+        "signature" : "WatsonStatus:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * The WatsonStatus objectini"
+        ],
+        "desc" : "Stops WatsonStatus",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      }
+    ],
+    "Method" : [
+      {
+        "doc" : "Starts WatsonStatus\n\nParameters:\n * None\n\nReturns:\n * The WatsonStatus object",
+        "def" : "WatsonStatus:start()",
+        "stripped_doc" : [
+          "Starts WatsonStatus",
+          ""
+        ],
+        "name" : "start",
+        "notes" : [
+
+        ],
+        "signature" : "WatsonStatus:start()",
+        "type" : "Method",
+        "returns" : [
+          " * The WatsonStatus object"
+        ],
+        "desc" : "Starts WatsonStatus",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Stops WatsonStatus\n\nParameters:\n * None\n\nReturns:\n * The WatsonStatus objectini",
+        "def" : "WatsonStatus:stop()",
+        "stripped_doc" : [
+          "Stops WatsonStatus",
+          ""
+        ],
+        "name" : "stop",
+        "notes" : [
+
+        ],
+        "signature" : "WatsonStatus:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * The WatsonStatus objectini"
+        ],
+        "desc" : "Stops WatsonStatus",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      }
+    ],
+    "name" : "WatsonStatus"
+  }
+]
