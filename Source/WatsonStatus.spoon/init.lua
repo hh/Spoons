@@ -1,6 +1,6 @@
 --- === WatsonStatus ===
 ---
---- Prevent the screen from going to sleep
+--- Display in menubar status from time tracker CLI Watson https://github.com/TailorDev/Watson
 --- Download: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WatsonStatus.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WatsonStatus.spoon.zip)
 
 -- Metadata
@@ -14,6 +14,17 @@ obj.license = "MIT - https://opensource.org/licenses/MIT"
 obj.menubar = nil
 obj.timer = nil
 obj.pathwatcher = nil
+
+--- WatsonStatus.watsonbin
+--- Variable
+--- Path to watson binary
+obj.watsonbin = "/usr/local/bin/watson"
+
+--- WatsonStatus.watsonfolder
+--- Variable
+--- Path to watson folder. Spoon set folder watch on it to monitor changes.
+obj.watsonfolder = "/Users/roman/Library/Application Support/watson"
+
 
 function obj:init()
 end
@@ -33,7 +44,7 @@ function obj:start()
     self.menubar:setClickCallback(self.clicked)
     self.update()
     self.timer = hs.timer.doEvery(60, self.update)
-    self.pathwatcher = hs.pathwatcher.new("/Users/roman/Library/Application Support/watson", obj.update):start()
+    self.pathwatcher = hs.pathwatcher.new(obj.watsonfolder, obj.update):start()
     return self
 end
 
@@ -57,7 +68,7 @@ function obj:stop()
 end
 
 function obj.update()
-    output = hs.execute("/usr/local/bin/watson status")
+    output = hs.execute(obj.." status")
     output = string.gsub(output, "\n", "")
     obj.menubar:setTooltip(output)
     if output == "No project started." then
@@ -70,7 +81,7 @@ function obj.update()
 end
 
 function obj.clicked()
-    hs.execute("/usr/local/bin/watson stop")
+    hs.execute(obj.." stop")
 end
 
 return obj

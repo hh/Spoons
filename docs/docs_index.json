@@ -73,9 +73,21 @@
     "type": "Method"
   },
   {
-    "desc": "Prevent the screen from going to sleep",
+    "desc": "Display in menubar status from time tracker CLI Watson https://github.com/TailorDev/Watson",
     "name": "WatsonStatus",
     "type": "Module"
+  },
+  {
+    "desc": "Path to watson binary",
+    "module": "WatsonStatus",
+    "name": "watsonbin",
+    "type": "Variable"
+  },
+  {
+    "desc": "Path to watson folder. Spoon set folder watch on it to monitor changes.",
+    "module": "WatsonStatus",
+    "name": "watsonfolder",
+    "type": "Variable"
   },
   {
     "desc": "Starts WatsonStatus",

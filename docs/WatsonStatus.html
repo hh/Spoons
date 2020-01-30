@@ -15,12 +15,17 @@
   <body>
     <header>
       <h1><a href="./index.html">docs</a> &raquo; WatsonStatus</h1>
-      <p>Prevent the screen from going to sleep
+      <p>Display in menubar status from time tracker CLI Watson <a href="https://github.com/TailorDev/Watson">https://github.com/TailorDev/Watson</a>
 Download: <a href="https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WatsonStatus.spoon.zip">https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WatsonStatus.spoon.zip</a></p>
 
       </header>
       <h3>API Overview</h3>
       <ul>
+        <li>Variables - Configurable values</li>
+          <ul>
+            <li><a href="#watsonbin">watsonbin</a></li>
+            <li><a href="#watsonfolder">watsonfolder</a></li>
+          </ul>
         <li>Methods - API calls which can only be made on an object returned by a constructor</li>
           <ul>
             <li><a href="#start">start</a></li>
@@ -28,6 +33,45 @@ Download: <a href="https://github.com/Hammerspoon/Spoons/raw/master/Spoons/Watso
           </ul>
       </ul>
       <h3>API Documentation</h3>
+        <h4 class="documentation-section">Variables</h4>
+          <section id="watsonbin">
+            <a name="//apple_ref/cpp/Variable/watsonbin" class="dashAnchor"></a>
+            <h5><a href="#watsonbin">watsonbin</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>WatsonStatus.watsonbin</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Variable</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Path to watson binary</p>
+</td>
+              </tr>
+            </table>
+          </section>
+          <section id="watsonfolder">
+            <a name="//apple_ref/cpp/Variable/watsonfolder" class="dashAnchor"></a>
+            <h5><a href="#watsonfolder">watsonfolder</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>WatsonStatus.watsonfolder</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Variable</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Path to watson folder. Spoon set folder watch on it to monitor changes.</p>
+</td>
+              </tr>
+            </table>
+          </section>
         <h4 class="documentation-section">Methods</h4>
           <section id="start">
             <a name="//apple_ref/cpp/Method/start" class="dashAnchor"></a>

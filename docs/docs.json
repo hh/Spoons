@@ -282,9 +282,28 @@
         "type": "Method"
       }
     ],
-    "Variable": [],
-    "desc": "Prevent the screen from going to sleep",
-    "doc": "Prevent the screen from going to sleep\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WatsonStatus.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WatsonStatus.spoon.zip)",
+    "Variable": [
+      {
+        "def": "WatsonStatus.watsonbin",
+        "desc": "Path to watson binary",
+        "doc": "Path to watson binary",
+        "name": "watsonbin",
+        "signature": "WatsonStatus.watsonbin",
+        "stripped_doc": "",
+        "type": "Variable"
+      },
+      {
+        "def": "WatsonStatus.watsonfolder",
+        "desc": "Path to watson folder. Spoon set folder watch on it to monitor changes.",
+        "doc": "Path to watson folder. Spoon set folder watch on it to monitor changes.",
+        "name": "watsonfolder",
+        "signature": "WatsonStatus.watsonfolder",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "desc": "Display in menubar status from time tracker CLI Watson https://github.com/TailorDev/Watson",
+    "doc": "Display in menubar status from time tracker CLI Watson https://github.com/TailorDev/Watson\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WatsonStatus.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WatsonStatus.spoon.zip)",
     "items": [
       {
         "def": "WatsonStatus:start()",
@@ -315,6 +334,24 @@
         "signature": "WatsonStatus:stop()",
         "stripped_doc": "",
         "type": "Method"
+      },
+      {
+        "def": "WatsonStatus.watsonbin",
+        "desc": "Path to watson binary",
+        "doc": "Path to watson binary",
+        "name": "watsonbin",
+        "signature": "WatsonStatus.watsonbin",
+        "stripped_doc": "",
+        "type": "Variable"
+      },
+      {
+        "def": "WatsonStatus.watsonfolder",
+        "desc": "Path to watson folder. Spoon set folder watch on it to monitor changes.",
+        "doc": "Path to watson folder. Spoon set folder watch on it to monitor changes.",
+        "name": "watsonfolder",
+        "signature": "WatsonStatus.watsonfolder",
+        "stripped_doc": "",
+        "type": "Variable"
       }
     ],
     "name": "WatsonStatus",
