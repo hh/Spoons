@@ -17,12 +17,12 @@ obj.pathwatcher = nil
 
 --- WatsonStatus.watsonbin
 --- Variable
---- Path to watson binary
+--- Path to watson binary. Default: `/usr/local/bin/watson`
 obj.watsonbin = "/usr/local/bin/watson"
 
 --- WatsonStatus.watsonfolder
 --- Variable
---- Path to watson folder. Spoon set folder watch on it to monitor changes.
+--- Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `/Users/roman/Library/Application Support/watson`
 obj.watsonfolder = "/Users/roman/Library/Application Support/watson"
 
 
@@ -68,7 +68,7 @@ function obj:stop()
 end
 
 function obj.update()
-    output = hs.execute(obj.." status")
+    output = hs.execute(obj.watsonbin .. " status")
     output = string.gsub(output, "\n", "")
     obj.menubar:setTooltip(output)
     if output == "No project started." then
@@ -81,7 +81,7 @@ function obj.update()
 end
 
 function obj.clicked()
-    hs.execute(obj.." stop")
+    hs.execute(obj.watsonbin .. " stop")
 end
 
 return obj

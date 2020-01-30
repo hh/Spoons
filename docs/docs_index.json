@@ -78,13 +78,13 @@
     "type": "Module"
   },
   {
-    "desc": "Path to watson binary",
+    "desc": "Path to watson binary. Default: `/usr/local/bin/watson`",
     "module": "WatsonStatus",
     "name": "watsonbin",
     "type": "Variable"
   },
   {
-    "desc": "Path to watson folder. Spoon set folder watch on it to monitor changes.",
+    "desc": "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `/Users/roman/Library/Application Support/watson`",
     "module": "WatsonStatus",
     "name": "watsonfolder",
     "type": "Variable"
