@@ -1,0 +1,127 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+
+    ],
+    "stripped_doc" : [
+
+    ],
+    "type" : "Module",
+    "Deprecated" : [
+
+    ],
+    "desc" : "Prevent the screen from going to sleep",
+    "Constructor" : [
+
+    ],
+    "doc" : "Prevent the screen from going to sleep\nDownload: [https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/WatsonStatus.spoon.zip](https:\/\/github.com\/Hammerspoon\/Spoons\/raw\/master\/Spoons\/WatsonStatus.spoon.zip)",
+    "items" : [
+      {
+        "doc" : "Starts WatsonStatus\n\nParameters:\n * None\n\nReturns:\n * The WatsonStatus object",
+        "stripped_doc" : [
+          "Starts WatsonStatus",
+          ""
+        ],
+        "parameters" : [
+          " * None",
+          ""
+        ],
+        "desc" : "Starts WatsonStatus",
+        "notes" : [
+
+        ],
+        "signature" : "WatsonStatus:start()",
+        "type" : "Method",
+        "returns" : [
+          " * The WatsonStatus object"
+        ],
+        "def" : "WatsonStatus:start()",
+        "name" : "start"
+      },
+      {
+        "doc" : "Stops WatsonStatus\n\nParameters:\n * None\n\nReturns:\n * The WatsonStatus objectini",
+        "stripped_doc" : [
+          "Stops WatsonStatus",
+          ""
+        ],
+        "parameters" : [
+          " * None",
+          ""
+        ],
+        "desc" : "Stops WatsonStatus",
+        "notes" : [
+
+        ],
+        "signature" : "WatsonStatus:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * The WatsonStatus objectini"
+        ],
+        "def" : "WatsonStatus:stop()",
+        "name" : "stop"
+      }
+    ],
+    "Command" : [
+
+    ],
+    "Method" : [
+      {
+        "doc" : "Starts WatsonStatus\n\nParameters:\n * None\n\nReturns:\n * The WatsonStatus object",
+        "stripped_doc" : [
+          "Starts WatsonStatus",
+          ""
+        ],
+        "parameters" : [
+          " * None",
+          ""
+        ],
+        "desc" : "Starts WatsonStatus",
+        "notes" : [
+
+        ],
+        "signature" : "WatsonStatus:start()",
+        "type" : "Method",
+        "returns" : [
+          " * The WatsonStatus object"
+        ],
+        "def" : "WatsonStatus:start()",
+        "name" : "start"
+      },
+      {
+        "doc" : "Stops WatsonStatus\n\nParameters:\n * None\n\nReturns:\n * The WatsonStatus objectini",
+        "stripped_doc" : [
+          "Stops WatsonStatus",
+          ""
+        ],
+        "parameters" : [
+          " * None",
+          ""
+        ],
+        "desc" : "Stops WatsonStatus",
+        "notes" : [
+
+        ],
+        "signature" : "WatsonStatus:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * The WatsonStatus objectini"
+        ],
+        "def" : "WatsonStatus:stop()",
+        "name" : "stop"
+      }
+    ],
+    "Field" : [
+
+    ],
+    "name" : "WatsonStatus"
+  }
+]

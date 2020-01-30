@@ -23,7 +23,7 @@ to <code>push-to-talk</code>, so I need to press <code>fn</code> key to unmute m
 If I need to actively chat in group meeting or it's one-on-one meeting,
 I'm switching to <code>push-to-mute</code> state, so mic will be unmute by default and <code>fn</code> key mutes it.</p>
 <p>PushToTalk has menubar with colorful icons so you can easily see current mic state.</p>
-<p>Sample config: <code>spoon.SpoonInstall:andUse("PushToTalk", {start = true, config = { app_switcher = { ['zoom.us'] = 'push-to-talk' }}})</code> 
+<p>Sample config: <code>spoon.SpoonInstall:andUse("PushToTalk", {start = true, config = { app_switcher = { ['zoom.us'] = 'push-to-talk' }}})</code>
 and separate keybinding to toggle states with lambda function <code>function() spoon.PushToTalk.toggleStates({'push-to-talk', 'release-to-talk'}) end</code></p>
 <p>Check out my config: <a href="https://github.com/skrypka/hammerspoon_config/blob/master/init.lua">https://github.com/skrypka/hammerspoon_config/blob/master/init.lua</a></p>
 

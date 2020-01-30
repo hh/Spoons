@@ -196,7 +196,7 @@
       }
     ],
     "desc": "Implements push-to-talk and push-to-mute functionality with `fn` key.",
-    "doc": "Implements push-to-talk and push-to-mute functionality with `fn` key.\nI implemented this after reading Gitlab remote handbook https://about.gitlab.com/handbook/communication/ about Shush utility.\n\nMy workflow:\n\nWhen Zoom starts, PushToTalk automatically changes mic state from `default`\nto `push-to-talk`, so I need to press `fn` key to unmute myself and speak.\nIf I need to actively chat in group meeting or it's one-on-one meeting,\nI'm switching to `push-to-mute` state, so mic will be unmute by default and `fn` key mutes it.\n\nPushToTalk has menubar with colorful icons so you can easily see current mic state.\n\nSample config: `spoon.SpoonInstall:andUse(\"PushToTalk\", {start = true, config = { app_switcher = { ['zoom.us'] = 'push-to-talk' }}})` \nand separate keybinding to toggle states with lambda function `function() spoon.PushToTalk.toggleStates({'push-to-talk', 'release-to-talk'}) end`\n\nCheck out my config: https://github.com/skrypka/hammerspoon_config/blob/master/init.lua",
+    "doc": "Implements push-to-talk and push-to-mute functionality with `fn` key.\nI implemented this after reading Gitlab remote handbook https://about.gitlab.com/handbook/communication/ about Shush utility.\n\nMy workflow:\n\nWhen Zoom starts, PushToTalk automatically changes mic state from `default`\nto `push-to-talk`, so I need to press `fn` key to unmute myself and speak.\nIf I need to actively chat in group meeting or it's one-on-one meeting,\nI'm switching to `push-to-mute` state, so mic will be unmute by default and `fn` key mutes it.\n\nPushToTalk has menubar with colorful icons so you can easily see current mic state.\n\nSample config: `spoon.SpoonInstall:andUse(\"PushToTalk\", {start = true, config = { app_switcher = { ['zoom.us'] = 'push-to-talk' }}})`\nand separate keybinding to toggle states with lambda function `function() spoon.PushToTalk.toggleStates({'push-to-talk', 'release-to-talk'}) end`\n\nCheck out my config: https://github.com/skrypka/hammerspoon_config/blob/master/init.lua",
     "items": [
       {
         "def": "PushToTalk.app_switcher",
@@ -239,7 +239,86 @@
       }
     ],
     "name": "PushToTalk",
-    "stripped_doc": "I implemented this after reading Gitlab remote handbook https://about.gitlab.com/handbook/communication/ about Shush utility.\n\nMy workflow:\n\nWhen Zoom starts, PushToTalk automatically changes mic state from `default`\nto `push-to-talk`, so I need to press `fn` key to unmute myself and speak.\nIf I need to actively chat in group meeting or it's one-on-one meeting,\nI'm switching to `push-to-mute` state, so mic will be unmute by default and `fn` key mutes it.\n\nPushToTalk has menubar with colorful icons so you can easily see current mic state.\n\nSample config: `spoon.SpoonInstall:andUse(\"PushToTalk\", {start = true, config = { app_switcher = { ['zoom.us'] = 'push-to-talk' }}})` \nand separate keybinding to toggle states with lambda function `function() spoon.PushToTalk.toggleStates({'push-to-talk', 'release-to-talk'}) end`\n\nCheck out my config: https://github.com/skrypka/hammerspoon_config/blob/master/init.lua",
+    "stripped_doc": "I implemented this after reading Gitlab remote handbook https://about.gitlab.com/handbook/communication/ about Shush utility.\n\nMy workflow:\n\nWhen Zoom starts, PushToTalk automatically changes mic state from `default`\nto `push-to-talk`, so I need to press `fn` key to unmute myself and speak.\nIf I need to actively chat in group meeting or it's one-on-one meeting,\nI'm switching to `push-to-mute` state, so mic will be unmute by default and `fn` key mutes it.\n\nPushToTalk has menubar with colorful icons so you can easily see current mic state.\n\nSample config: `spoon.SpoonInstall:andUse(\"PushToTalk\", {start = true, config = { app_switcher = { ['zoom.us'] = 'push-to-talk' }}})`\nand separate keybinding to toggle states with lambda function `function() spoon.PushToTalk.toggleStates({'push-to-talk', 'release-to-talk'}) end`\n\nCheck out my config: https://github.com/skrypka/hammerspoon_config/blob/master/init.lua",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "WatsonStatus:start()",
+        "desc": "Starts WatsonStatus",
+        "doc": "Starts WatsonStatus\n\nParameters:\n * None\n\nReturns:\n * The WatsonStatus object",
+        "name": "start",
+        "parameters": [
+          " * None"
+        ],
+        "returns": [
+          " * The WatsonStatus object"
+        ],
+        "signature": "WatsonStatus:start()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "WatsonStatus:stop()",
+        "desc": "Stops WatsonStatus",
+        "doc": "Stops WatsonStatus\n\nParameters:\n * None\n\nReturns:\n * The WatsonStatus objectini",
+        "name": "stop",
+        "parameters": [
+          " * None"
+        ],
+        "returns": [
+          " * The WatsonStatus objectini"
+        ],
+        "signature": "WatsonStatus:stop()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Prevent the screen from going to sleep",
+    "doc": "Prevent the screen from going to sleep\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WatsonStatus.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WatsonStatus.spoon.zip)",
+    "items": [
+      {
+        "def": "WatsonStatus:start()",
+        "desc": "Starts WatsonStatus",
+        "doc": "Starts WatsonStatus\n\nParameters:\n * None\n\nReturns:\n * The WatsonStatus object",
+        "name": "start",
+        "parameters": [
+          " * None"
+        ],
+        "returns": [
+          " * The WatsonStatus object"
+        ],
+        "signature": "WatsonStatus:start()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "WatsonStatus:stop()",
+        "desc": "Stops WatsonStatus",
+        "doc": "Stops WatsonStatus\n\nParameters:\n * None\n\nReturns:\n * The WatsonStatus objectini",
+        "name": "stop",
+        "parameters": [
+          " * None"
+        ],
+        "returns": [
+          " * The WatsonStatus objectini"
+        ],
+        "signature": "WatsonStatus:stop()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "WatsonStatus",
+    "stripped_doc": "Download: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WatsonStatus.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/WatsonStatus.spoon.zip)",
     "submodules": [],
     "type": "Module"
   }
