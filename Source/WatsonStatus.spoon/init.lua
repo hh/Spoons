@@ -22,8 +22,8 @@ obj.watsonbin = "/usr/local/bin/watson"
 
 --- WatsonStatus.watsonfolder
 --- Variable
---- Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `/Users/roman/Library/Application Support/watson`
-obj.watsonfolder = "/Users/roman/Library/Application Support/watson"
+--- Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `$HOME/Library/Application Support/watson`
+obj.watsonfolder = os.getenv("HOME") .. "/Library/Application Support/watson"
 
 
 function obj:init()

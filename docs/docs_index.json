@@ -84,7 +84,7 @@
     "type": "Variable"
   },
   {
-    "desc": "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `/Users/roman/Library/Application Support/watson`",
+    "desc": "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `$HOME/Library/Application Support/watson`",
     "module": "WatsonStatus",
     "name": "watsonfolder",
     "type": "Variable"

@@ -294,8 +294,8 @@
       },
       {
         "def": "WatsonStatus.watsonfolder",
-        "desc": "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `/Users/roman/Library/Application Support/watson`",
-        "doc": "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `/Users/roman/Library/Application Support/watson`",
+        "desc": "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `$HOME/Library/Application Support/watson`",
+        "doc": "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `$HOME/Library/Application Support/watson`",
         "name": "watsonfolder",
         "signature": "WatsonStatus.watsonfolder",
         "stripped_doc": "",
@@ -346,8 +346,8 @@
       },
       {
         "def": "WatsonStatus.watsonfolder",
-        "desc": "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `/Users/roman/Library/Application Support/watson`",
-        "doc": "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `/Users/roman/Library/Application Support/watson`",
+        "desc": "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `$HOME/Library/Application Support/watson`",
+        "doc": "Path to watson folder. Spoon set folder watch on it to monitor changes. Default: `$HOME/Library/Application Support/watson`",
         "name": "watsonfolder",
         "signature": "WatsonStatus.watsonfolder",
         "stripped_doc": "",
